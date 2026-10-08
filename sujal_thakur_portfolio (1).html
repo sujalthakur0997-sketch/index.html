@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sujal Thakur | WordPress Front-End Developer</title>
+<style>
+:root{
+  --dark:#183642;
+  --gold:#b39b3b;
+  --cream:#f7f5ef;
+  --text:#26343a;
+  --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{
+  min-height:100vh;background:linear-gradient(135deg,#183642,#234b58);
+  color:#fff;display:flex;align-items:center;position:relative;overflow:hidden
+}
+header:after{
+  content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(255,255,255,.12);
+  border-radius:50%;right:-120px;top:-100px
+}
+.nav{
+  position:absolute;top:0;left:0;width:100%;padding:24px 0;z-index:2
+}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:22px;font-weight:800;letter-spacing:1px}
+.nav-links{display:flex;gap:28px;font-size:14px}
+.nav-links a:hover{color:#d8c76d}
+.hero{position:relative;z-index:1;padding-top:70px}
+.hero h1{font-size:clamp(42px,7vw,78px);line-height:1.05;margin-bottom:12px}
+.hero h2{font-size:clamp(20px,3vw,30px);font-weight:500;color:#d8c76d;margin-bottom:22px}
+.hero p{max-width:680px;color:#e5ecee;font-size:18px}
+.buttons{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.btn{padding:13px 22px;border-radius:5px;font-weight:700;display:inline-block}
+.btn-primary{background:var(--gold);color:#fff}
+.btn-outline{border:1px solid rgba(255,255,255,.6);color:#fff}
+section{padding:85px 0}
+.section-title{font-size:34px;color:var(--dark);margin-bottom:10px}
+.section-line{width:65px;height:3px;background:var(--gold);margin-bottom:35px}
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px}
+.about p{font-size:17px}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.skill{padding:9px 14px;background:#fff;border:1px solid #ddd;border-radius:20px;font-size:14px}
+.experience-card{border-left:4px solid var(--gold);padding:10px 0 10px 24px;margin-bottom:30px}
+.experience-card h3{color:var(--dark);font-size:21px}
+.experience-card span{color:#777;font-size:14px}
+.projects{background:#fff}
+.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{border:1px solid #e4e4e4;border-radius:10px;padding:25px;background:#fff;box-shadow:0 8px 25px rgba(0,0,0,.05);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 35px rgba(0,0,0,.09)}
+.card h3{color:var(--dark);font-size:21px;margin-bottom:6px}
+.card .url{color:var(--gold);font-size:14px;margin-bottom:12px}
+.card p{font-size:15px;color:#566168}
+.card a.visit{display:inline-block;margin-top:16px;color:var(--dark);font-weight:700}
+.contact{background:var(--dark);color:#fff}
+.contact .section-title{color:#fff}
+.contact .section-line{margin-bottom:25px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.contact-item{margin-bottom:15px}
+.contact-item strong{display:block;color:#d8c76d}
+footer{background:#102932;color:#b9c4c8;text-align:center;padding:20px;font-size:14px}
+@media(max-width:760px){
+  .nav-links{display:none}
+  .about-grid,.contact-grid,.project-grid{grid-template-columns:1fr}
+  section{padding:60px 0}
+  .hero p{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<header id="home">
+  <nav class="nav">
+    <div class="container nav-inner">
+      <div class="logo">SUJAL THAKUR</div>
+      <div class="nav-links">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a>
+        <a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container hero">
+    <h1>Sujal Thakur</h1>
+    <h2>WordPress Front-End Developer</h2>
+    <p>
+      WordPress Front-End Developer with almost 2 years of hands-on experience
+      building and customizing websites using WordPress, Elementor, Divi,
+      Wix Studio, HTML, CSS and WooCommerce.
+    </p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="#projects">View My Work</a>
+      <a class="btn btn-outline" href="#contact">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+    <div class="about-grid">
+      <div>
+        <p>
+          I am a WordPress Front-End Developer focused on creating clean,
+          responsive and user-friendly websites. I have experience working
+          with Elementor, Divi, Wix Studio, WooCommerce, HTML, CSS and
+          Bootstrap.
+        </p>
+        <p style="margin-top:16px">
+          I enjoy converting ideas and designs into functional websites,
+          optimizing layouts for mobile devices, and improving website
+          performance and user experience.
+        </p>
+      </div>
+      <div>
+        <h3 style="color:#183642">Technical Skills</h3>
+        <div class="skills">
+          <span class="skill">WordPress</span><span class="skill">Elementor</span>
+          <span class="skill">Divi Builder</span><span class="skill">Wix Studio</span>
+          <span class="skill">WooCommerce</span><span class="skill">HTML5</span>
+          <span class="skill">CSS3</span><span class="skill">Bootstrap</span>
+          <span class="skill">Responsive Design</span><span class="skill">Theme Customization</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <div class="section-line"></div>
+    <div class="experience-card">
+      <h3>Web Developer — Hilt Web Solutions</h3>
+      <span>May 2025 – Present</span>
+      <p style="margin-top:8px">Working on WordPress and front-end website development, customization, responsive layouts and client projects.</p>
+    </div>
+    <div class="experience-card">
+      <h3>Web Developer — Tritech IT Agency</h3>
+      <span>October 2024 – April 2025</span>
+      <p style="margin-top:8px">Worked on website development and front-end implementation with a focus on responsive and user-friendly interfaces.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="section-line"></div>
+    <div class="project-grid">
+
+      <article class="card">
+        <h3>Allyset</h3><div class="url">allyset.com</div>
+        <p>Built a WooCommerce and Elementor storefront for a professional electrical materials brand, including product catalog setup, pricing, discounts and responsive layouts.</p>
+        <a class="visit" href="https://allyset.com" target="_blank">Visit Website →</a>
+      </article>
+
+      <article class="card">
+        <h3>Sister Sister Home</h3><div class="url">sistersisterhome.com</div>
+        <p>Developed a WooCommerce-powered lifestyle and home décor store with curated product collections, category navigation and an image-driven responsive layout.</p>
+        <a class="visit" href="https://sistersisterhome.com" target="_blank">Visit Website →</a>
+      </article>
+
+      <article class="card">
+        <h3>Demi's Tasty</h3><div class="url">demistasty.com</div>
+        <p>Designed an Elementor-based website for an organic juice and beverage company with product showcases, video banners and a responsive premium presentation.</p>
+        <a class="visit" href="https://demistasty.com" target="_blank">Visit Website →</a>
+      </article>
+
+      <article class="card">
+        <h3>Your Digital Solution</h3><div class="url">yourdigitalsolution.com.au</div>
+        <p>Worked on an Elementor website for an Australian digital marketing agency, structuring service pages, case studies and call-to-action sections.</p>
+        <a class="visit" href="https://yourdigitalsolution.com.au" target="_blank">Visit Website →</a>
+      </article>
+
+      <article class="card">
+        <h3>Jacopo Ducato Ruggeri</h3><div class="url">jacopoducatogr.com</div>
+        <p>Created a portfolio website in Elementor for a Swiss-based architect and garden designer, focused on large-format imagery, minimal typography and smooth page layouts.</p>
+        <a class="visit" href="https://jacopoducatogr.com" target="_blank">Visit Website →</a>
+      </article>
+
+      <article class="card">
+        <h3>Adesola Series</h3><div class="url">adesolaseries.com</div>
+        <p>Built a WordPress and WooCommerce store for a bilingual children's bookshop, including product pages, cart and checkout flow with a family-friendly design.</p>
+        <a class="visit" href="https://adesolaseries.com" target="_blank">Visit Website →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title">Let's Work Together</h2>
+    <div class="section-line"></div>
+    <div class="contact-grid">
+      <div>
+        <p>Have a WordPress website project or need help with front-end development? Feel free to contact me.</p>
+      </div>
+      <div>
+        <div class="contact-item"><strong>Email</strong>sujalthakur0997@gmail.com</div>
+        <div class="contact-item"><strong>Phone</strong>8351940997</div>
+        <div class="contact-item"><strong>Location</strong>Bilaspur, Himachal Pradesh, India</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Sujal Thakur. All Rights Reserved.</footer>
+</body>
+</html>
